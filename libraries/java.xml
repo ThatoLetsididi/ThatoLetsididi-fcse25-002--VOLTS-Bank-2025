@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="java">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.jdks/javafx-sdk-25.0.1/lib/javafx.base.jar!/" />
+      <root url="jar://$USER_HOME$/.jdks/javafx-sdk-25.0.1/lib/javafx.controls.jar!/" />
+      <root url="jar://$USER_HOME$/.jdks/javafx-sdk-25.0.1/lib/javafx.fxml.jar!/" />
+      <root url="jar://$USER_HOME$/.jdks/javafx-sdk-25.0.1/lib/javafx.graphics.jar!/" />
+      <root url="jar://$USER_HOME$/.jdks/javafx-sdk-25.0.1/lib/javafx.media.jar!/" />
+      <root url="jar://$USER_HOME$/.jdks/javafx-sdk-25.0.1/lib/javafx.swing.jar!/" />
+      <root url="jar://$USER_HOME$/.jdks/javafx-sdk-25.0.1/lib/javafx.web.jar!/" />
+      <root url="jar://$USER_HOME$/.jdks/javafx-sdk-25.0.1/lib/javafx-swt.jar!/" />
+      <root url="jar://$USER_HOME$/.jdks/javafx-sdk-25.0.1/lib/jdk.jsobject.jar!/" />
+      <root url="jar://$USER_HOME$/.jdks/javafx-sdk-25.0.1/lib/jfx.incubator.input.jar!/" />
+      <root url="jar://$USER_HOME$/.jdks/javafx-sdk-25.0.1/lib/jfx.incubator.richtext.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-9.4.0 (1).zip!/mysql-connector-j-9.4.0/src/build/java" />
+      <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-9.4.0 (1).zip!/mysql-connector-j-9.4.0/src/demo/java" />
+      <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-9.4.0 (1).zip!/mysql-connector-j-9.4.0/src/generated/java" />
+      <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-9.4.0 (1).zip!/mysql-connector-j-9.4.0/src/legacy/java" />
+      <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-9.4.0 (1).zip!/mysql-connector-j-9.4.0/src/main/core-api/java" />
+      <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-9.4.0 (1).zip!/mysql-connector-j-9.4.0/src/main/core-impl/java" />
+      <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-9.4.0 (1).zip!/mysql-connector-j-9.4.0/src/main/protocol-impl/java" />
+      <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-9.4.0 (1).zip!/mysql-connector-j-9.4.0/src/main/user-api/java" />
+      <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-9.4.0 (1).zip!/mysql-connector-j-9.4.0/src/main/user-impl/java" />
+      <root url="jar://$USER_HOME$/Downloads/mysql-connector-j-9.4.0 (1).zip!/mysql-connector-j-9.4.0/src/test/java" />
+    </SOURCES>
+  </library>
+</component>

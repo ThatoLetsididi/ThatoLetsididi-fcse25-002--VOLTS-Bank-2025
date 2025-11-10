@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.VOLTSBankApp.controller.DashboardControllerFX"
+            stylesheets="@../css/styles.css">
+
+    <!-- Top Bar -->
+    <top>
+        <HBox styleClass="top-bar" alignment="CENTER_LEFT" spacing="20">
+            <padding>
+                <Insets top="15" right="20" bottom="15" left="20"/>
+            </padding>
+
+            <Label text="⚡ VOLTS BANK" styleClass="header-title">
+                <font>
+                    <Font name="System Bold" size="20"/>
+                </font>
+            </Label>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <Label fx:id="welcomeLabel" text="Welcome, User" styleClass="welcome-text">
+                <font>
+                    <Font size="14"/>
+                </font>
+            </Label>
+
+            <Button fx:id="logoutButton" text="Logout"
+                    onAction="#handleLogout"
+                    styleClass="logout-button"/>
+        </HBox>
+    </top>
+
+    <!-- Main Content -->
+    <center>
+        <VBox spacing="20" styleClass="main-content">
+            <padding>
+                <Insets top="30" right="30" bottom="30" left="30"/>
+            </padding>
+
+            <!-- Balance Card -->
+            <VBox styleClass="balance-card" spacing="10">
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+
+                <Label text="Total Balance" styleClass="card-subtitle"/>
+                <Label fx:id="totalBalanceLabel" text="BWP 0.00" styleClass="balance-amount">
+                    <font>
+                        <Font name="System Bold" size="32"/>
+                    </font>
+                </Label>
+            </VBox>
+
+            <!-- Accounts Section -->
+            <VBox spacing="10">
+                <HBox alignment="CENTER_LEFT">
+                    <Label text="Your Accounts" styleClass="section-title">
+                        <font>
+                            <Font name="System Bold" size="18"/>
+                        </font>
+                    </Label>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Button text="+ Create Account"
+                            fx:id="createAccountButton"
+                            onAction="#handleCreateAccount"
+                            styleClass="action-button"/>
+                </HBox>
+
+                <ListView fx:id="accountListView" styleClass="account-list"
+                          prefHeight="200"/>
+            </VBox>
+
+            <!-- Action Buttons -->
+            <HBox spacing="15" alignment="CENTER">
+                <Button text="View Details"
+                        fx:id="viewAccountButton"
+                        onAction="#handleViewAccount"
+                        styleClass="primary-button"
+                        prefWidth="120"/>
+                <Button text="Deposit"
+                        fx:id="depositButton"
+                        onAction="#handleDeposit"
+                        styleClass="success-button"
+                        prefWidth="120"/>
+                <Button text="Withdraw"
+                        fx:id="withdrawButton"
+                        onAction="#handleWithdraw"
+                        styleClass="warning-button"
+                        prefWidth="120"/>
+                <Button text="Pay Interest"
+                        fx:id="payInterestButton"
+                        onAction="#handlePayInterest"
+                        styleClass="info-button"
+                        prefWidth="120"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

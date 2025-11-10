@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.VOLTSBankApp.controller.LoginControllerFX"
+           stylesheets="@../css/styles.css">
+
+    <VBox alignment="CENTER" spacing="20" styleClass="login-container">
+        <padding>
+            <Insets top="40" right="40" bottom="40" left="40"/>
+        </padding>
+
+        <!-- Logo/Title -->
+        <VBox alignment="CENTER" spacing="10">
+            <Label text="⚡ VOLTS BANK" styleClass="app-title">
+                <font>
+                    <Font name="System Bold" size="36"/>
+                </font>
+            </Label>
+            <Label text="Banking Made Simple" styleClass="app-subtitle">
+                <font>
+                    <Font size="14"/>
+                </font>
+            </Label>
+        </VBox>
+
+        <!-- Login Form -->
+        <VBox spacing="15" styleClass="login-form">
+            <padding>
+                <Insets top="30" right="30" bottom="30" left="30"/>
+            </padding>
+
+            <Label text="Sign In" styleClass="form-title">
+                <font>
+                    <Font name="System Bold" size="24"/>
+                </font>
+            </Label>
+
+            <!-- Email Field -->
+            <VBox spacing="5">
+                <Label text="Email Address" styleClass="field-label"/>
+                <TextField fx:id="emailField" promptText="Enter your email"
+                           styleClass="custom-textfield"/>
+            </VBox>
+
+            <!-- Password Field -->
+            <VBox spacing="5">
+                <Label text="Password" styleClass="field-label"/>
+                <PasswordField fx:id="passwordField" promptText="Enter your password"
+                               styleClass="custom-textfield"/>
+            </VBox>
+
+            <!-- Error Message -->
+            <Label fx:id="messageLabel" styleClass="error-message" wrapText="true"/>
+
+            <!-- Buttons -->
+            <HBox spacing="10" alignment="CENTER">
+                <Button fx:id="loginButton" text="Login"
+                        onAction="#handleLogin"
+                        styleClass="primary-button"
+                        prefWidth="150"/>
+                <Button fx:id="registerButton" text="Register"
+                        onAction="#handleRegister"
+                        styleClass="secondary-button"
+                        prefWidth="150"/>
+            </HBox>
+        </VBox>
+
+        <!-- Footer -->
+        <Label text="© 2025 VOLTS Bank. All rights reserved." styleClass="footer-text">
+            <font>
+                <Font size="10"/>
+            </font>
+        </Label>
+    </VBox>
+</StackPane>
